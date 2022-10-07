@@ -5,7 +5,7 @@ public class Main
    public static void main(String[] args)
    {
       Scanner in = new Scanner(System.in);
-      System.out.println("Please enter your birthday (month and day):  ");
+      System.out.print("Please enter your birthday (month and day):  ");
       int month = in.nextInt();
       int day = in.nextInt();
 
