@@ -1,51 +1,27 @@
 import java.util.Scanner;
 
-public class Main
+public class CountVowels
 {
    public static void main(String[] args)
    {
       Scanner in = new Scanner(System.in);
-      System.out.println("Enter a set of floating-point values.  Enter "
-         + "anything other than a number to indicate the end of the "
-         + "series:  ");
+      System.out.println("Enter a word: ");
+      String word = in.next();
 
-      boolean first = true;
-      double min = 0;
-      double max = 0;
-      double sum = 0.0;
-
-      // We'll use this number for the average later
-      int numberOfValuesSeen = 0;
-
-      while (in.hasNextDouble())
+      int vowelCount = 0;
+      for (int i = 0; i < word.length(); i++)
       {
-         double value = in.nextDouble();
-         numberOfValuesSeen++;
-         if (first)
+         char currentCharacter = word.charAt(i);
+         if (currentCharacter == 'a' || currentCharacter == 'A'
+            || currentCharacter == 'e' || currentCharacter == 'E'
+            || currentCharacter == 'i' || currentCharacter == 'I'
+            || currentCharacter == 'o' || currentCharacter == 'O'
+            || currentCharacter == 'u' || currentCharacter == 'U'
+			|| currentCharacter == 'y' || currentCharacter == 'Y')
          {
-            min = value;
-            max = value;
-            sum = value;
-            first = false;
-         }
-         else
-         {
-            if (value < min)
-            {
-               min = value;
-            }
-            if (value > max)
-            {
-               max = value;
-            }
-            sum = sum + value;
+            vowelCount++;
          }
       }
-
-      System.out.printf("The average of the values is: %f%n", sum
-         / numberOfValuesSeen);
-      System.out.printf("The smallest value is %f%n", min);
-      System.out.printf("The largest value is %f%n", max);
-      System.out.printf("The range is %f%n", max - min);
+      System.out.println(vowelCount + " vowel(s).");
    }
 }
