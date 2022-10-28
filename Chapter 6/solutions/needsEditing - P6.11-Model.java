@@ -1,6 +1,6 @@
 public class Main
 {
-   public static boolean count(int e, int[] b)
+   public static int count(int e, int[] b)
    {
       int count = 0;
       for (int i = 0; i < b.length; i++)

@@ -1,14 +1,5 @@
 public class Main
 {
-    public static void replaceEven(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 0) // Number is even
-            {
-                arr[i] = 0;
-            }
-        }
-    }
-
     public static void main(String[] args) {
         int[] randoms = new int[10];
 
@@ -20,8 +11,13 @@ public class Main
         }
         System.out.println();
 
-// Replace the even elements.
-        replaceEven(randoms);
+		// Replace the even elements.
+        for (int i = 0; i < randoms.length; i++) {
+            if (randoms[i] % 2 == 0) // Number is even
+            {
+                randoms[i] = 0;
+            }
+        }
 
         // Print again to see new elements.
         for (int i = 0; i < 10; i++) {
