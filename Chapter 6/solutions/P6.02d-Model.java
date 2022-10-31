@@ -1,16 +1,5 @@
 public class Main
 {
-    public static void replaceWithLargestNeighbor(int[] arr) {
-        // Start loop at one, and stop before the end
-        for (int i = 1; i < arr.length - 1; i++) {
-            if (arr[i - 1] > arr[i + 1]) {
-                arr[i] = arr[i - 1];
-            } else {
-                arr[i] = arr[i + 1];
-            }
-        }
-    }
-
     public static void main(String[] args) {
         int[] randoms = new int[10];
         // Create a test array containing random numbers.
@@ -21,8 +10,15 @@ public class Main
         }
         System.out.println();
 
-        // Replace with largest neighbor
-        replaceWithLargestNeighbor(randoms);
+        // Replace with larger neighbor
+        // Start loop at one, and stop before the end
+        for (int i = 1; i < randoms.length - 1; i++) {
+            if (randoms[i - 1] > randoms[i + 1]) {
+                randoms[i] = randoms[i - 1];
+            } else {
+                randoms[i] = randoms[i + 1];
+            }
+        }
 
         // Print again to see new elements.
         for (int i = 0; i < 10; i++) {
