@@ -49,3 +49,16 @@
  * The output would be 'The elements of the arrays form the same set'
  * For example, if the two input arrays are 1 4 9 16 9 7 4 9 11 and 11 11 7 13 16 4 1
  * The output would be 'The elements of the arrays do not form the same set'
+
+
+**P6.14** Write a program that generates a sequence of 20 random values between 0 and 99 in an array, prints the sequence, sorts it, and prints the sorted sequence. Use the sort method from the standard Java library.
+
+**P6.15** Write a program that produces ten random permutations of the numbers 1 to 10. To generate a random permutation, you need to fill an array with the numbers 1 to 10 so that no two entries of the array have the same contents. You could do it by brute force, by generating random values until you have a value that is not yet in the array. But that is inefficient. Instead, follow this algorithm:
+ * Make a second array and fill it with the numbers 1 to 10. 
+ * Repeat 10 times 
+ * Pick a random element from the second array. 
+ * Remove it and append it to the permutation array.
+
+**P6.20** Write a method that computes the average of the neighbors of a two-dimensional array element in the eight directions shown in the figure below. However, if the element is located at the boundary of the array, only include the neighbors that are in the array. For example, if row and column are both 0, there are only three neighbors.
+ * ![image](https://user-images.githubusercontent.com/92865953/199124117-8e00dc0e-3688-48a5-b0f2-f7328ef5d358.png)
+
