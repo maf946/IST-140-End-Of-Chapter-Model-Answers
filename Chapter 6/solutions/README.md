@@ -62,3 +62,6 @@
 **P6.20** Write a method that computes the average of the neighbors of a two-dimensional array element in the eight directions shown in the figure below. However, if the element is located at the boundary of the array, only include the neighbors that are in the array. For example, if row and column are both 0, there are only three neighbors.
  * ![image](https://user-images.githubusercontent.com/92865953/199124117-8e00dc0e-3688-48a5-b0f2-f7328ef5d358.png)
 
+**P6.21** Write a program that reads a sequence of input values and displays a bar chart of the values, using asterisks, like this: 
+ * ![image](https://user-images.githubusercontent.com/92865953/199126381-8e396d46-b560-427c-b480-3b4e056e8c24.png)
+ * You may assume that all values are positive. First figure out the maximum value. That value’s bar should be drawn with 40 asterisks. Shorter bars should use proportionally fewer asterisks.
