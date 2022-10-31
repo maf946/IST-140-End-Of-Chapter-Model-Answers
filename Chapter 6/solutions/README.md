@@ -64,11 +64,11 @@
 
 **P6.21** Write a program that reads a sequence of input values and displays a bar chart of the values, using asterisks, like this: 
  * ![image](https://user-images.githubusercontent.com/92865953/199126381-8e396d46-b560-427c-b480-3b4e056e8c24.png)
- * You may assume that all values are positive. First figure out the maximum value. That value’s bar should be drawn with 40 asterisks. Shorter bars should use proportionally fewer asterisks.
+ * You may assume that all values are positive. 
 
-**P6.22** Referencing the previous question, improve the program to work correctly when the data set contains negative values.
+**P6.22** Referencing the previous question, improve the program to work correctly when the data set contains negative values. Also figure out the maximum value. That value’s bar should be drawn with 40 asterisks. Shorter bars should use proportionally fewer asterisks.
 
-**P6.23** Improve the program of question 21 by adding captions for each bar. Prompt the user for the captions and data values. The output should look like this:
+**P6.23** Improve the program of question 22 by adding captions for each bar. Prompt the user for the captions and data values. The output should look like this:
  * ![image](https://user-images.githubusercontent.com/92865953/199128296-3cfb9cb3-4a42-4aa5-b72c-bce584b9f91e.png)
 
 **P6.26** Write a program that appends two array lists together.
