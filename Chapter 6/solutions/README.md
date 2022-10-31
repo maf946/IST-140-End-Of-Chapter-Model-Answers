@@ -50,6 +50,11 @@
  * For example, if the two input arrays are 1 4 9 16 9 7 4 9 11 and 11 11 7 13 16 4 1
  * The output would be 'The elements of the arrays do not form the same set'
 
+**P6.11** Write a program that checks whether two arrays have the same elements in some order, with the same multiplicities.
+ * For example 1 4 9 16 9 7 4 9 11
+ * and 11 1 4 9 16 9 7 4 9 would be considered identical 
+ * but 1 4 9 16 9 7 4 9 11 
+ * and 15 1 4 9 16 9 7 4  would not
 
 **P6.14** Write a program that generates a sequence of 20 random values between 0 and 99 in an array, prints the sequence, sorts it, and prints the sorted sequence. Use the sort method from the standard Java library.
 
