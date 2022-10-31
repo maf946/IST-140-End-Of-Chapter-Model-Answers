@@ -65,3 +65,20 @@
 **P6.21** Write a program that reads a sequence of input values and displays a bar chart of the values, using asterisks, like this: 
  * ![image](https://user-images.githubusercontent.com/92865953/199126381-8e396d46-b560-427c-b480-3b4e056e8c24.png)
  * You may assume that all values are positive. First figure out the maximum value. That value’s bar should be drawn with 40 asterisks. Shorter bars should use proportionally fewer asterisks.
+
+**P6.22** Referencing the previous question, improve the program to work correctly when the data set contains negative values.
+
+**P6.23** Improve the program of question 21 by adding captions for each bar. Prompt the user for the captions and data values. The output should look like this:
+ * ![image](https://user-images.githubusercontent.com/92865953/199128296-3cfb9cb3-4a42-4aa5-b72c-bce584b9f91e.png)
+
+**P6.26** Write a program that appends two array lists together.
+
+**P6.27** Write a program that merges two array lists, alternating elements from both array lists. If one array list is shorter than the other, then alternate as long as you can and then append the remaining elements from the longer array list.
+ * For example if one list is 1 4 9 16 
+ * and the other is 9 7 4 9 11
+ * the output would be 1 9 4 7 9 4 16 9 11
+
+**P6.28** Write a program that merges two sorted array lists, producing a new sorted array list. Keep an index into each array list, indicating how much of it has been processed already. Each time, append the smallest unprocessed element from either array list, then advance the index.
+ * For example if one list is 1 4 9 16 
+ * and the other is 4 7 9 9 11
+ * the output would be 1 4 4 7 9 9 9 11 16
