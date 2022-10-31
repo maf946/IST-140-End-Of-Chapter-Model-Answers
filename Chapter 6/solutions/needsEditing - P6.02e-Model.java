@@ -1,28 +1,5 @@
 public class Main
 {
-    public static void removeMiddle(int[] arr) {
-        int size = arr.length;
-        if (size % 2 == 0)  // Size is even
-        {
-            // Figure out starting point for removal
-            int firstToRemove = size / 2 - 1;
-
-            // Remove middle two elements
-            for (int i = firstToRemove; i < size - 2; i++) {
-                arr[i] = arr[i + 2];
-            }
-        } else  // Size is odd
-        {
-            // Figure out starting point for removal
-            int firstToRemove = size / 2;
-
-            // Remove middle element
-            for (int i = firstToRemove; i < size - 1; i++) {
-                arr[i] = arr[i + 1];
-            }
-        }
-    }
-
     public static void main(String[] args) {
         int[] randoms = new int[11];
         // Create a test array containing random numbers
@@ -34,7 +11,26 @@ public class Main
         System.out.println();
 
         // Remove the middle element(s)
-        removeMiddle(randoms);
+        int size = randoms.length;
+        if (size % 2 == 0)  // Size is even
+        {
+            // Figure out starting point for removal
+            int firstToRemove = size / 2 - 1;
+
+            // Remove middle two elements
+            for (int i = firstToRemove; i < size - 2; i++) {
+                randoms[i] = randoms[i + 2];
+            }
+        } else  // Size is odd
+        {
+            // Figure out starting point for removal
+            int firstToRemove = size / 2;
+
+            // Remove middle element
+            for (int i = firstToRemove; i < size - 1; i++) {
+                randoms[i] = randoms[i + 1];
+            }
+        }
 
         // Print again to see new order.
         for (int i = 0; i < randoms.length; i++) {
@@ -51,8 +47,27 @@ public class Main
         }
         System.out.println();
 
+        size = randoms.length;
         // Remove the middle element(s)
-        removeMiddle(randoms);
+        if (size % 2 == 0)  // Size is even
+        {
+            // Figure out starting point for removal
+            int firstToRemove = size / 2 - 1;
+
+            // Remove middle two elements
+            for (int i = firstToRemove; i < size - 2; i++) {
+                randoms[i] = randoms[i + 2];
+            }
+        } else  // Size is odd
+        {
+            // Figure out starting point for removal
+            int firstToRemove = size / 2;
+
+            // Remove middle element
+            for (int i = firstToRemove; i < size - 1; i++) {
+                randoms[i] = randoms[i + 1];
+            }
+        }
 
         // Print again to see new order.
         for (int i = 0; i < randoms.length; i++) {
