@@ -17,35 +17,13 @@ public class Main
             userInput = scnr.nextInt();
         }
 
-        // This solution truncates instead of rounding bar heights
-        final int MAX_HEIGHT = 20;                // 20 is the maximum height
-        //find the maximum value
-        int max = list.get(0);
-        for (int x : list)
+        for(int i = 0; i < list.size(); i++)
         {
-            if (x > max)
+            for(int x = 0; x < list.get(i); x++)
             {
-                max = x;
+                System.out.print("*");
             }
-        }
-        double scale = (double) MAX_HEIGHT / max; // scale value for each number
-
-        for (int row = 0; row < MAX_HEIGHT; row++)   // print all rows every time
-        {
-            for (int col = 0; col < list.size(); col++)  // print 1 column for each item
-            {
-                int n = list.get(col);        // get the number
-                n = (int) (n * scale);        // scale the number
-                if (row >= MAX_HEIGHT - n)    // spaces at top (upward growing)
-                {
-                    System.out.print("*");
-                }
-                else
-                {
-                    System.out.print(" ");
-                }
-            }
-            System.out.println();
+            System.out.println("");
         }
     }
 }
