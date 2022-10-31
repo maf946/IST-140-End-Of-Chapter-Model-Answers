@@ -1,6 +1,6 @@
 public class Main
 {
-    /**
+    /** 
      Computes the alternating sum of the values in an array list
      @return the alternating sum of the values in data
      */
