@@ -56,6 +56,10 @@
  * but 1 4 9 16 9 7 4 9 11 
  * and 15 1 4 9 16 9 7 4  would not
 
+**P6.12** A run is a sequence of adjacent repeated values. Write a program that generates a sequence of 20 random die tosses in an array and that prints the die values, marking the runs by including them in parentheses, like this: 1 2 (5 5) 3 1 2 4 3 (2 2 2 2) 3 6 (5 5) 6 3 1
+
+**P6.13** Write a program that generates a sequence of 20 random die tosses in an array and that prints the die values, marking only the longest run.
+
 **P6.14** Write a program that generates a sequence of 20 random values between 0 and 99 in an array, prints the sequence, sorts it, and prints the sorted sequence. Use the sort method from the standard Java library.
 
 **P6.15** Write a program that produces ten random permutations of the numbers 1 to 10. To generate a random permutation, you need to fill an array with the numbers 1 to 10 so that no two entries of the array have the same contents. You could do it by brute force, by generating random values until you have a value that is not yet in the array. But that is inefficient. Instead, follow this algorithm:
