@@ -32,5 +32,12 @@ public class Main
       {
          System.out.println("File not found!");
       }
+      finally 
+      {
+         if (inFile != null)
+         {
+            inFile.close();
+         }
+      }
    }
 }
